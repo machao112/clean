@@ -1,0 +1,204 @@
+.home {
+	text-align: center;
+}
+.home p:first-child {
+	font-size: 30px;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.home p:last-child {
+	font-size: 20px;
+}
+
+.home h2 {
+	font-size: 43px;
+	margin-bottom: 70px;
+}
+
+header {
+	min-height: 800px;
+	background: url(../images/bg-header.png);
+	position: relative;
+}
+header .container {
+	position: relative;
+}
+header:after {
+	content:'';
+	clear: both;
+	display: block;
+}
+header .logo {
+	float: left;
+	margin-top: 30px;
+}
+
+header ul.menu {
+	margin-top: 50px;
+	list-style: none;
+	float: right;
+	padding: 0;
+}
+header ul.menu li {
+	float: left;
+}
+
+header ul:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+header ul.menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	padding: 10px 20px;
+}
+header .title {
+	clear: both;
+	color: White;
+
+}
+
+header .title span {
+	color: #cfaf33;
+}
+
+header .title {
+	min-height: 655px;
+	
+}
+header .title-page {
+	text-align: right;
+}
+header .title h1 {
+	font-size: 70px;
+	line-height: 0.9;
+}
+header .title span {
+	font-size: 140px;
+    display: inline-block;
+}
+
+header .title p {
+	font-size: 20px;
+	margin: 35px 0 70px 0;
+}
+
+header .title a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 40px;
+	border: 2px solid #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+header .iron-man {
+	transition: all 0.3s ease-in-out;
+	z-index: 0;
+}
+header .iron-man img{
+	width: 100%;
+} 
+header .iron-man:hover {
+	transform: scale(1.5);
+}
+header .toggle-mobile-menu {
+	width: 50px;
+	height: 50px;
+	/*background-color: pink;*/
+	float: right;
+	position: relative;
+	display: flex;
+	align-items: center;
+	display: none;
+}
+
+header .toggle-mobile-menu span,
+header .toggle-mobile-menu span:after,
+header .toggle-mobile-menu span:before {
+	content: '';
+	width: 100%;
+	height: 4px;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 30px;
+}
+header .toggle-mobile-menu span:after {
+	top:17px;
+}
+
+header .toggle-mobile-menu span:before {
+	bottom: 17px;
+}
+
+@media (max-width: 992px) {
+	header .iron-man {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	header .logo {
+		float: none;
+		margin: 0;
+		text-align: center;
+	}
+	header .logo img {
+		padding-top: 30px;
+	}
+	header ul.menu {
+		float: none;
+		margin: 0;
+		clear: both;
+		height: 0;
+		overflow: hidden;
+		transition: all 0.5s ease-in-out;
+	}
+	header ul.open {
+		height: auto;
+	}
+	header ul.menu li {
+		float: none;
+		border-bottom: 1px solid #fff; 
+	}
+	header ul.menu li:last-child {
+		border-bottom: none;
+	}
+	header ul.menu li a {
+		padding-left: 0; 
+	}
+	header .title {
+		text-align: center;
+	}
+	header .title h1 {
+		font-size: 50px;
+	}
+	header .title span {
+		font-size: 100px;
+		text-indent: 0;
+	    display: inline-block;
+	}
+
+	header .title-page {
+		text-align: center;
+	}
+	header .toggle-mobile-menu {
+		display: flex;
+	}
+
+}
+
+@media (max-width: 383px) {
+	header .title h1 {
+		font-size: 20px;
+	}
+
+	header .title span {
+		font-size: 50px;
+		text-indent: 0;
+	    display: block;
+	}
+}

@@ -1,0 +1,80 @@
+footer {
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+footer form {
+	width: 100%;
+}
+footer iframe {
+	width: 100%;
+	margin: 60px 0;
+}
+
+footer h3 {
+	margin-bottom: 50px;
+}
+
+footer .input-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+footer .input-group label {
+	position: absolute;
+	color: #999;
+	/*background: pink;*/
+	z-index: 3;
+	top: 5px;
+	left: 10px;
+	font-size: 18px;
+	transition: all 0.5s ease-in-out;
+}
+footer .input-group input {
+	width: 100%;
+	background-color: black;
+	cursor: pointer;
+
+}
+footer .input-group .form-control:focus {
+	background-color: #000;
+	border-color: transparent;
+	color: #fff;
+}
+
+footer .input-group .form-control:focus + label,
+footer .input-group .form-control.has-value + label{
+	top: -30px;
+	font-size: 14px;
+}
+
+footer textarea {
+	display: block;
+	flex: 2;
+	background-color: #000;
+    color: #fff;
+	outline: none;
+}
+
+footer .icon {
+	background: #ffb600;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    line-height: 55px;
+    border-radius: 50%;
+    display: inline-block;
+}
+footer .msg {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;	
+}
+
+footer .msg button {
+	margin-left: 20px;
+}
+footer .icon-socials {
+	margin-bottom: 30px;
+}

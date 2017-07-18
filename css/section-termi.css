@@ -1,0 +1,92 @@
+section.termi {
+	background: url(../images/bg-clients.png) no-repeat center;
+	background-size: cover;text-align: center;
+	color: #fff;
+	padding: 130px 0;
+}
+section.termi .col-12 {
+	padding: 0 150px;
+	position: relative;
+}
+section.termi .slides:after,
+section.termi .slides:before {
+	content: '';
+	width: 55px;
+	height: 55px;
+	position: absolute;
+}
+
+section.termi .slides:before {
+	background: url(../images/“.png) no-repeat center;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+section.termi .slides:after {
+	background: url(../images/”.png) no-repeat center;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+section.termi .slide{
+	display: none;
+}
+section.termi .slide.active {
+	display: block;
+	animation: fade 1s ease-in-out forwards;
+}
+
+@keyframes fade {
+	0% {transform:translateY(100px) scale(0); opacity: 0}
+	100% {transform:translateY(0px) scale(1); opacity: 1}
+}
+
+section.termi .title p:nth-child(1) {
+	font-size: 30px;
+	font-style: italic;
+	margin: 15px;
+}
+
+section.termi .title p:nth-child(2) {
+	/*font-style: italic;*/
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 80px;
+}
+
+section.termi .col-12 p:nth-child(1) {
+	font-size: 20px;
+}
+
+section.termi .col-12 h2 {}
+
+section.termi .dots {
+	text-align: center;
+	width: 100%;
+	margin-top: 100px;
+}
+section.termi .dots span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%; 
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+section.termi .dots span.active {
+	background-color: #ffb600;
+	border-color: #ffb600;
+}
+
+@media (max-width: 576px) {
+	section.termi .col-12{
+		padding: 0 20px;
+	}
+	section.termi .slides:after,
+	section.termi .slides:before {
+		display: none;
+	}
+}

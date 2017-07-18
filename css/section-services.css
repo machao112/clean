@@ -1,0 +1,65 @@
+section {
+	padding: 100px 0;
+	background: url(../images/bg-service.png) no-repeat center;
+	background-size: cover;
+}
+
+section.services {
+
+}
+
+section.services .icon p {
+	background: #ffb600;
+	color: #fff;
+	width: 92px;
+	height: 92px;
+	font-size: 50px;
+	line-height: 92px;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	margin: 0 auto;
+}
+
+section.services .icon:hover p {
+	transform: scale(1.2);
+}
+section.services .info {
+	text-align: center;
+}
+section.services .info p:nth-child(1) {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+section.services .col-lg-4 p{
+	font-size: 60px;
+}
+
+section.services .col-lg-4 p span {
+	background-color: #ffb600;
+	color: #fff;
+	font-size: 70px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+@media (max-width: 992px) {
+	section.services .col-lg-4 p {
+		font-size: 40px;
+	}
+
+	section.services .col-lg-4 p span {
+		font-size: 50px;
+	}
+}
+@media (max-width: 768px) {
+	section.services .col-lg-4 p {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	section.services .col-lg-4 p span{
+		font-size: 40px;
+	}
+}

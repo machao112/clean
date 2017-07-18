@@ -1,0 +1,18 @@
+section.port{
+	background-image: url(../images/bg-porpoli.png);
+	text-align: center;
+	color: #fff;
+}
+
+section.port img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+section.port .home {
+	margin-bottom: 40px;
+}
+
+section.port .col-md-6 {
+	margin-bottom: 30px;
+}
